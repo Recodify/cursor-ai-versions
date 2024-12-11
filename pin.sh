@@ -22,6 +22,7 @@ FILE="./cursor-$VERSION.AppImage"
 
 if [ ! -e "$FILE" ]; then
     echo "You need an existing version $VERSION in the root of this repo."
+    exit 1
 else
     echo "  - Pinned source version of cursor exists"
 fi
